@@ -1,4 +1,21 @@
-div{
-    color: aquamarine;
-}
-
+.x {
+    background-color: rgb(234, 241, 241);
+    color: rgb(76, 170, 170);
+    border:1px solid;
+    border-radius: 30px;
+ 
+ 
+ }
+ .y {
+    background-color: rgb(171, 238, 238);
+    color: rgb(231, 242, 242);
+    border:1px solid;
+    border-radius: 50px;
+ 
+ 
+ }
+ .z {
+    background-color: rgb(46, 19, 219);
+    color: aliceblue;
+    box-shadow: 3px 3px red, -1em 0 .4em rgb(92, 135, 138);
+ }
