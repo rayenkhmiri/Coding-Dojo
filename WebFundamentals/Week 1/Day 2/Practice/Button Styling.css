@@ -8,14 +8,14 @@
  }
  .y {
     background-color: rgb(171, 238, 238);
-    color: rgb(231, 242, 242);
+    color: rgb(8, 35, 35);
     border:1px solid;
     border-radius: 50px;
  
  
  }
  .z {
-    background-color: rgb(46, 19, 219);
-    color: aliceblue;
-    box-shadow: 3px 3px red, -1em 0 .4em rgb(92, 135, 138);
+    background-color: rgb(185, 177, 232);
+    color: rgb(70, 101, 129);
+    box-shadow: 3px 3px rgb(247, 194, 194), -1em 0 .4em rgb(181, 232, 236);
  }

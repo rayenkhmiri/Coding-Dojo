@@ -1,0 +1,29 @@
+*{
+    margin: 0px auto;
+    color: white;
+}
+
+.nav{
+    display: flex;
+    width: 950px;
+    justify-self: space-between;
+    height: 30px;
+    background-color: gray;
+    align-items: center;
+
+
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    list-style-type: none ;
+}
+.nav-title{
+    flex: 1;
+    margin-left: 10px;
+
+}
+.btn{
+    background-color: ;
+}
