@@ -1,0 +1,45 @@
+h1{
+color: rgb(68,84,77);
+text-align: center;
+}
+.blue{
+    width:1460px;
+    background-color: aqua;
+    height: 200px;
+  display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+    
+
+
+}
+.pink{
+    width: 1460px;
+    background-color:rgb(216,162,194) ;
+    height: 200px;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content:space-evenly;
+
+   
+    
+}
+.white{
+    width: 1460px;
+    background-color: rgb(248, 240, 228);
+    height: 200px;
+    display:flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+    
+
+}
+img{
+    width: 160px;
+    margin: 35px;
+    
+    
+}
