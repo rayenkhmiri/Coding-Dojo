@@ -1,0 +1,42 @@
+
+.me{
+    background-color:rgb(23,162,184);
+    height:80px;
+    width: 650px;
+    padding: 1em;
+   
+    box-shadow: 4px 4px 4px rgb(51, 40, 40);
+    
+
+   
+}
+.we{
+    background-color:rgb(246, 232, 246);
+    height:230px;
+    width: 650px;
+    padding: 1em;
+    box-shadow: 4px 4px 4px rgb(33, 30, 30);
+
+
+}
+.tt{
+    position: relative;
+    left: 20px;
+    top: 52px;
+}
+.container{
+    margin: auto;
+    width: 80%;
+    border: 25%;
+}
+.mimou{
+    display: flex;
+    align-content: center;
+    text-decoration: underline ;
+  
+
+}
+.pipoi{
+    list-style: none;
+}
+

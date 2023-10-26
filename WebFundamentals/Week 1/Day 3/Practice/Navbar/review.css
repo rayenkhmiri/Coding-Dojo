@@ -1,0 +1,50 @@
+*{
+    color: white;
+}
+
+
+
+
+.nav{
+    display: flex;
+    background-color: rgb(102, 99, 99);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 2px 1px black;
+    border: 20px;
+   
+
+
+}
+.nav-title{
+    margin-left: 19px ;
+}
+
+.nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    margin-right: 10px;
+  
+    
+}
+.active{
+
+}
+    
+
+a{
+    
+text-decoration: none;
+}
+.btn{
+background-color: aqua;
+    box-shadow:5px 5px 2px 1px  black;
+    width: 120%;
+    height: 40%;
+
+    
+    
+}
