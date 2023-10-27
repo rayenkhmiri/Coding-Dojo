@@ -1,26 +1,12 @@
 .row{
-    background-color: rgb(40, 166, 166);
-    margin: 2%;
-    width: 70%;
-    justify-content: space-evenly;
+    
     display: flex;
-
 }
 .col{
 
-    width: 70%;
-    justify-content: space-between;
-    flex: 20%;
-    
-
-    
-
-  
-
-
-    
-    
-
+    background-color: rgb(40, 166, 166);
+    margin: 2px;
+    flex: 1;
 }
 .col-2{
     

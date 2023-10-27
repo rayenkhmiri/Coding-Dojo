@@ -2,10 +2,10 @@
 .me{
     background-color:rgb(23,162,184);
     height:80px;
-    width: 650px;
+    width: 654px;
     padding: 1em;
    
-    box-shadow: 4px 4px 4px rgb(51, 40, 40);
+  
     
 
    
@@ -15,7 +15,9 @@
     height:230px;
     width: 650px;
     padding: 1em;
-    box-shadow: 4px 4px 4px rgb(33, 30, 30);
+    
+    border: 3px grey solid;
+
 
 
 }
