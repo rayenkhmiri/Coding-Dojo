@@ -1,4 +1,4 @@
-console.log("page loaded...");
+console.log("helloo js");
 user_id = [document.querySelector("#first"), document.querySelector("#second")];
 function chgName() {
   var new_name = document.querySelector("#change-name");
