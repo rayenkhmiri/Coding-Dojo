@@ -9,7 +9,7 @@ var nbre_conn = document.querySelector("#acc_conn");
 var nb_req = 2;
 var conn = 418;
 
-function rmvUser(id) {
+function maaUser(id) {
   console.log(id);
   console.log(user_id);
   user_id[id].remove();
