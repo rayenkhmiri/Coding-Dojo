@@ -66,11 +66,12 @@
   /* -------m Body------- */
   .m-body {
     display: flex;
+   
     justify-content: space-between;
     margin-bottom: 20px;
   }
   .column {
-    background-color: white;
+    background-color: rgb(238,238,238);
     display: flex;
     width: 240px;
     flex-direction: column;

@@ -4,13 +4,13 @@ var metricToChoose = "°C";
 
 function clickCity(i) {
   if (i == 1) {
-    alert("Loading weather report... for Burbank city");
+    alert("Loading weather report for Burbank city");
   } else {
     if (i == 2) {
-      alert("Loading weather report... for Chicago city");
+      alert("Loading weather report for Chicago city");
     } else {
       if (i == 3) {
-        alert("Loading weather report... for Dallas city");
+        alert("Loading weather report for Dallas city");
       }
     }
   }
