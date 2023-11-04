@@ -1,24 +1,105 @@
-.like{
-    position: relative;
-    left: 500px;
-    top: 150px;
-    background-color: white;
-    width: 370px;
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color:white;
+  }
+  
+  a {
+    color: rgb(31, 31, 198);
+  }
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .up{
+    background-color:black;
+    height: px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title {
+  color: white;
+    font-size: 3rem;
+  }
+  .Feed {
+    font-size: 25px;
+    background-color: inherit;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .flex-1 {
+    flex: 1;
+    margin-right: 30px;
+  }
+  .box {
+    background-color:white;
+    margin-top: 30px;
+    padding: 30px;
+    border: 2px solid gray ;
     height: 150px;
-    margin-top: 15px;
-    padding: 25px;
-
-    border: solid;
-    
-   
-}
-.btn{
-    background-color:rgb(242,202,78) ;
-    position: relative;
-    left: 250px;
-    bottom: 85px;
-    width: 65px;
-    height: 25px;
-    border: solid;
-    box-shadow: 3px 3px 2px 1px;
-}
+  }
+  #hight {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .user-circle {
+    height: 100px;
+    width: 100px;
+  }
+  .flex-2 {
+    flex: 2;
+  }
+  .definition {
+    display: flex;
+  
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .left {
+    flex: 1;
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  #nbr_like,
+  #nbr_like1,
+  #nbr_like2 {
+    border: none;
+    background-color: white;
+    font-size: 1.2rem;
+  }
+  .like {
+    background-color: rgb(168, 168, 80);
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border: 2px solid blzck;
+    box-shadow: 4px 4px black;
+    cursor: pointer;
+  }
+  .definition-text {
+    flex: 3;
+    font-size: 1.4rem;
+    padding-top: 20px;
+  }
+  .left p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  .box h2 {
+    font-size: 1.7rem;
+  }

@@ -8,17 +8,67 @@
 
 </head>
 <body>
-    <div class="like">
-        <h2>Some User</h2>
-        <p>This is some filler text,it can say anything we like </p>
-        <button class="btn"  onclick="">
-            like
-        </button>
-     
+    <div class="container">
+        <div class="up">
+          <h1 class="title">Network</h1>
+        </div>
+        <div class="Feed">
+          <h1>Your Feed</h1>
+        </div>
+        <div class="row">
+          <div class="flex-1">
+            <div class="box" id="hight">
+              <img class="user-circle" src="la-personne (1).png" alt="la-personne" />
+              <h2><a href="#">Add an Avatar</a></h2>
+              <h1>James Doe</h1>
+            </div>
+          </div>
+          <div class="flex-2">
+            <div class="box definition">
+              <div class="left">
+                <h1>Neil M</h1>
+                <button id="nbr_like">0 likes</button>
+                <button class="btn like" onclick="addLike()">like</button>
+              </div>
+              <p class="definition-text">
+                I just set up this new discord bot, let me know what you all
+                think. <a href="#">link</a>
+              </p>
+            </div>
+            <!-- ------- annother one------- -->
+            <div class="box definition">
+              <div class="left">
+                <h1>Nichole K</h1>
+                <button id="nbr_like1">0 likes</button>
+                <button class="btn like" onclick="addLike1()">like</button>
+              </div>
+              <p class="definition-text">
+                Just finished my <a href="#">next comic</a>, check it out.
+              </p>
+            </div>
+  
+           
 
-    </div>
+            
+            <!-- ------ another one -------- -->
+            <div class="box definition">
+              <div class="left">
+                <h1>Jim R</h1>
+                <button id="nbr_like2">0 likes</button>
+                <button class="btn like" onclick="addLike2()">like</button>
+              </div>
+              <p class="definition-text">
+                I can't stop listening to the <a href="#">new album</a>. Who else
+                is liking it?
+              </p>
+            </div>
+  
+          </div>
+        </div>
+      </div>
     
 
+ 
 
 
 
