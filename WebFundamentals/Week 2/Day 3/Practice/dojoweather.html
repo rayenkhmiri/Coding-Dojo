@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="dojoweather.css">
+</head>
+<body>
+    
+</body>
+</html>
+    <div class="top">
+      <div class="nav">
+        <h1 class="nav-title">DojoWeather</h1>
+        <ul class="nav-links">
+          <li><button class="btn" onclick="clickCity(1)">Burbank</button></li>
+          <li><button class="btn" onclick="clickCity(2)">Chicago</button></li>
+          <li><button class="btn" onclick="clickCity(3)">Dallas</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="up-body">
+        <h1 class="city-title">San Jose</h1>
+        <div class="up-right">
+          <p>show temperature in</p>
+          <select name="temperature" id="metric" onchange="metricChange()">
+            <option>°C</option>
+            <option>°F</option>
+          </select>
+        </div>
+      </div>
+      <div class="m-body">
+        <div class="column">
+          <div class="isCentered">
+            <h2>Today</h2>
+            <img class="icons" src="assests/some_rain.png" alt="rain" />
+            <p>some rain</p>
+          </div>
+          <div class="temp">
+            <label class="hot" id="b1">24°</label>
+            <label class="cold" id="b2">18°</label>
+          </div>
+        </div>
+        <div class="column">
+          <div class="isCentered">
+            <h2>Tomorrow</h2>
+            <img class="icons" src="assests/some_sun.png" alt="sun" />
+            <p>some sun</p>
+          </div>
+          <div class="temp">
+            <label class="hot" id="b3">27°</label>
+            <label class="cold" id="b4">19°</label>
+          </div>
+        </div>
+        <div class="column">
+          <div class="isCentered">
+            <h2>Friday</h2>
+            <img class="icons" src="assests/some_clouds.png" alt="clouds" />
+            <p>some clouds</p>
+          </div>
+          <div class="temp">
+            <label class="hot" id="b5">21°</label>
+            <label class="cold" id="b6">16°</label>
+          </div>
+        </div>
+        <div class="column">
+          <div class="isCentered">
+            <h2>Saturday</h2>
+            <img class="icons" src="assests/some_sun.png" alt="sun" />
+            <p>some sun</p>
+          </div>
+          <div class="temp">
+            <label class="hot" id="b7">26°</label>
+            <label class="cold" id="b8">21°</label>
+          </div>
+        </div>
+      </div>
+      <div class="lower-body" id="cookie">
+        <img class="icons" src="assests/cookie.png" alt="cookie" />
+        <div class="lower-center">
+          <h1>Stop! Cookie time</h1>
+          <p>
+            We use cookies (sadly not the edible ones) to personalize 
+            content and ads, to provide social media features and to
+            analyse our trafiic. <a href="http://127.0.0.1:5500/dojoweather.html">read me</a>
+          
+         
+          </p>
+        </div>
+        <button class="fancy" onclick="removeDiv()">I Accept</button>
+      </div>
+    </div>
+    <script src="dojoweather.js"></script>
+ 
+  </body>
+</html>
