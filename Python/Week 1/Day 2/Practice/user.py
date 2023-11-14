@@ -14,13 +14,14 @@ class user:
             self.is_reward_member=True
             self.gold_card_points=200
             return self  
-        def spend_pooints(self,amount):
+        def spend_points(self,amount):
             if(amount<=self.gold_card_points):
                     self.gold_card_points-=amount
             else :
                     print("you can amount just this val ",self.gold_card_points)
                     self.gold_card_points=0
             return self
+        def spend_points
 
                     
 
