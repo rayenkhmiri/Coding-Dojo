@@ -21,7 +21,24 @@ class user:
                     print("you can amount just this val ",self.gold_card_points)
                     self.gold_card_points=0
             return self
-        def spend_points
+
+user1=User("rayen","khemiri","rayenkhmiri772@gmail.com",20)
+user1.display_info()
+user1.enroll()
+user1.display_info()
+user1.spend_points(50)
+user1.display_info()
+
+
+user2=user("wael","ajimi","waelajimi@gmail.com",28)
+user2.display_info()
+user2.enroll()
+user2.display_info()
+user2.spend_points(80)
+user2.display_info()
+
+
+      
 
                     
 
