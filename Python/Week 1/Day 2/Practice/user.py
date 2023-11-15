@@ -8,7 +8,7 @@ class user:
                 self.gold_card_points=gold_card_points
 
         def display_info(self):
-            print(f"first name is{self.first_name}\n last name is{self.last_name}\n email{self.email}\n age{self.age}\n is reward member{self.is_reward_member}\n gold card points{self.gold_card_points}")
+            print(f"first name is{self.first_name}\n last name is{self.last_name}\n email is{self.email}\n age{self.age}\n is reward member{self.is_reward_member}\n gold card points{self.gold_card_points}")
             return self
         def enroll(self):
             self.is_reward_member=True
