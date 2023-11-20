@@ -1,3 +1,6 @@
+from collections import UserDict
+
+
 class user: 
         def __init__(self,first_name,last_name,email,age,is_rewards_member=false,gold_card_points = 0 ):
                 self.first_name=first_name
@@ -22,7 +25,7 @@ class user:
                     self.gold_card_points=0
             return self
 
-user1=User("rayen","khemiri","rayenkhmiri772@gmail.com",20)
+user1=user("rayen","khemiri","rayenkhmiri772@gmail.com",20)
 user1.display_info()
 user1.enroll()
 user1.display_info()
