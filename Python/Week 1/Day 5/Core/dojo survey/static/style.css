@@ -1,0 +1,11 @@
+.heigth{
+    height: 100px;
+    width: 220px;
+}
+.container{
+   
+    width: 400px;
+    height: 400px;
+    background-color:rgb(52,58,62);
+    margin-left: 200px;
+}

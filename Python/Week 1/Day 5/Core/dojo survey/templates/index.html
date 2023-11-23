@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Index</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="hhh">Dojo survey</h1>
+    <form action="/process" method="post">
+        <p>
+            Name : <input type="text" name="name">
+        </p>
+        <p>
+            dojo location: <input type="text" name="age">
+        </p>
+        <p>
+            Favorite Laanguage : <input type="text" name="fav_number">
+        </p>
+        <p>
+            comments: <input type="text" name="fav_food" class="heigth">
+        </p>
+    
+        <button>Submit</button>
+    </form>
+</div>
+</body>
+</html>
