@@ -1,0 +1,18 @@
+les etapes flask ::
+
+
+1/ pipenv install flask pymysql flask-bcrypt
+
+2/$ touch server.py
+
+3/$ mkdir flask_app 
+
+4/$ cd flak_app/
+
+5/$ mkdir config controllers models templates static
+
+6/$ touch __init__.py
+
+7/$ cd ..
+
+8/$ ls
