@@ -1,31 +1,24 @@
-from flask import Flask, render_template, redirect,request,session
+from flask import Flask ,render_template , redirect, session,request
+app=Flask(__name__)
+app.secret_key="ray,rayen,"
 
-app = Flask(__name__)
-app.secret_key = 'we are not safe' # set a secret key for security purposes
-
-
-# http://127.0.0.1/
+@app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 
-@app.route('/process', methods=['POST'])
+@app.route('/process',methods=['post'])
 def process():
-    print("*"*20, request.form,"*"*20)
-    session["name"] = request.form["name"]
-    session["age"] = request.form["age"]
-    session["fav_food"] = request.form["fav_language"]
-    session["fav_number"] = request.form["comments"]
-  
-    return redirect('/display')
+    session["name"]=request.form["name"]
+    session["dojo_location"]=request.form["dojo_location"]
+    session["Favorite_Language"]=request.form["Favorite_Language"]
+    session["comment"]=request.form["Comment"]
 
-@app.route('/display')
-def display():
-    return render_template("hello.html")
+    return redirect('/result')
 
-@app.route('/clear')
-def clear():
-    session.clear()
-    return redirect ('/display')
+@app.route('/result')
+def result():
+    return render_template('result.html')
 
-if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+
+if __name__=="__main__" :
+    app.run(debug=True,port = 5500)

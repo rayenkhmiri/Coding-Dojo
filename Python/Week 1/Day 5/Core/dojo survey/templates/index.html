@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    <title>Index</title>
-</head>
-<body>
-<div class="container">
-    <h1 class="hhh">Dojo survey</h1>
-    <form action="/process" method="post">
-        <p>
-            Name : <input type="text" name="name">
-        </p>
-        <p>
-            dojo location: <input type="text" name="age">
-        </p>
-        <p>
-            Favorite Laanguage : <input type="text" name="fav_number">
-        </p>
-        <p>
-            comments: <input type="text" name="fav_food" class="heigth">
-        </p>
-    
-        <button>Submit</button>
-    </form>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>dojo survey</title>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center mt-4">
+      <form
+        action="/process"
+        method="POST"
+        style="width: 40%"
+        class="d-flex flex-column justify-content-center gap-3 px-5 py-4 bg-dark text-white"
+      >
+        <h1 class="text-warning">Dojo survey</h1>
+        <div class="d-flex flex-column">
+          <label for="name">Your name :</label>
+          <input type="text" name="name" />
+        </div>
+        <div class="d-flex flex-column">
+          <label for="dojo_location">Dojo location</label>
+          <select name="dojo_location" id="dojo_location" aria-placeholder="--- select a location --">
+            <option value="chicago">tunis</option>
+            <option value="Los_Angelos">canada</option>
+            <option value="Tunis">paris</option>
+            <option value="Paris">los Los_Angelos</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column">
+          <label for="Favorite_Language">Favorite Language</label>
+          <select name="Favorite_Language" id="Favorite_Language" aria-placeholder="--- select a language --" >
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Java">Java</option>
+            <option value="C-charp">java</option>
+          </select>
+        </div>
+        <label for="Comment">Comment(optionnal)</label>
+        <textarea name="Comment" id="Comment" cols="30" rows="10"></textarea>
+        <button type="submit" style="width: 30%" class="bg-warning ">Button</button>
+      </form>
+    </div>
+  </body>
 </html>

@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display</title>
-</head>
-<body>
-    <h1>Welcome To Display Page</h1>
-    <h4>Name : {{session['name']}}</h4>
-    <br>
-    <h4>Age : {{session.age}}</h4>
-    <br>
-    <h4>Food : {{session.fav_food}}</h4>
-    <br>
-    <h4>Color : {{session.fav_color}} </h4>
-    <br>
-    <h4>Sport :  {{session.fav_sport}}</h4>
-    <br>
-    <a href="/">Go Back</a>
-    <br>
-    <a href="/clear">Clear session</a>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>dojo survey</title>
+  </head>
+  <body>
+    <div class="container d-flex flex-column justify-content-center gap-4 mt-5 px-5 py-4 bg-dark" style="width: 40%;">
+     
+      <div class="d-flex text-primary ">
+        <h2>{{session["name"]}}</h2> 
+      </div >
+      <div class="d-flex align-items-center gap-3   text-white  ">
+        <h6>Dojo Location :</h6>
+        <h6>{{ session["dojo_location"]}}</h6>
+      </div>
+      <div class="d-flex align-items-center gap-3   text-white ">
+        <h6>Favorite Language :</h6>
+        <h6>{{ session["Favorite_Language"]}}</h6>
+      </div>
+      <div class="d-flex align-items-center gap-3 text-white  ">
+        <h6>Comment :</h6>
+        <h6>{{session["comment"]}}</h6>
+      </div>
+     <a href="/" class="text-decoration-none">Home</a>
+    </div>
+  </body>

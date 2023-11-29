@@ -1,4 +1,4 @@
-les etapes flask ::
+touch sertles etapes flask ::
 
 
 1/ pipenv install flask pymysql flask-bcrypt
