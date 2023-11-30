@@ -1,6 +1,6 @@
 from flask_app import app 
-from falsk import request, render_template , session , redirect , flash 
-# from flask_app.models
+from flask import request, render_template , session , redirect , flash 
+
 from flask_app.models.pokemon import Pokemon 
 
 
@@ -24,8 +24,8 @@ def create():
 def one(id):
     if 'user_id' in session:
         p=Pokemon.get_by_id({'id':id})
-        render_template
+        return render_template('one.html',p=p)
+    return redirect('/')
 
-@app.route('/pokemon/<int:>')
 
 

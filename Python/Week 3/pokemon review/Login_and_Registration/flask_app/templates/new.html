@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>logrreg</title>
 </head>
 <body>
+    <div class="d-flex justify-content-between m-5">
+        <h2>Add a new pokemon!</h2>
+        <div><a href="/dashbord" class="btn btn-secondary">back to dashbord</a>
+        <a href="/logout" class="btn btn-danger">Log out</a>
+    </div>
+    </div>
+    <div class="row text-center m-5">
+        <div class="col-6">
+            <form action="/pokemons/create" method="post">
+                <div class="form-group">
+                    <label for="">name</label>
+                    <input type="text" name="name" class="form-contrtol">
+                </div>
+                <div class="form-group">
+                    <label for="">Type</label>
+                    <select name="type" id="" class="form-control">
+                    <option value="GRASS"> GRASS</option>
+                    <option value="FIRE">FIRE</option>
+                    <option value="WATER">WATER</option>
+                    <option value="ELECTRIC">ELECTRIC </option>
+                </select>
+
+                </div>
+                <div class="form-group "> 
+                    <label for="">power</label>
+                    <input type="number" name="power" class="form-control">  
+                </div>
+                <div>
+                    <label for="">HP</label>
+                    <input type="number" name="HP" class="form-control">  
+
+                </div>
+                <div class="form-group "> 
+                    <label for="">Image</label>
+                    <input type="number" name="image" class="form-control">  
+                </div>
+
+
+            </form>
+        </div>
+
+
+        <div class="col-6">
+            {%for message in get_flashehed_messages()%}
+            <p class="text-danger">{{message}}</p>
+            {%endfor%}
+        </div>
+    </div>
     
 </body>
 </html>

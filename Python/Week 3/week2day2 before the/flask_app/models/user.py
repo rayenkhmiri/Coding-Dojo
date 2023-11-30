@@ -48,10 +48,13 @@ class User :
     @staticmethod
     def validate(data):
         is_valid=True
-
+        # first name
         if len(data['first_name'])<2:
             is_valid = False
             flash("First Name must be greater than 2 character", "register")
+
+
+            # last name
         if len(data['last_name'])<2:
                 is_valid = False
                 flash("Last Name must be greater than 2 characters","register")

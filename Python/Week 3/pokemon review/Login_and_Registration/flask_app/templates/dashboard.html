@@ -10,13 +10,37 @@
     <title>LogReg</title>
 </head>
 <body>
+    <div class="d-flex justify-content-between m-5">
+        <h2>Welcome,{{user.first_name}}</h2>
+        <div> <a href="/pokemon/new" class="btn btn-warning">Create</a>
+        <a href="/logout" class="btn btn-danger">Log Out</a></div>
+    </div>
+    <div class="m-5">
+        <h4>Your Pokemons :</h4>
+        <table class="table table-striped text-center ">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Power</th>
+                <th>HP</th>
+                <th>Actions</th>
+            </tr>
+            {%for p in pokemons%}
+            <tr>
+                <td>{{p.name}}</td>
+                <td>{{p.type}}</td>
+                <td>{{p.power}}</td>
+                <td>{{p.hp}}</td>
+                <td>
+                    <a href="/pokemon/{{p.id}}">View Pokémon</a>
+                    <a href="/pokemons/{{p.id}}/edit">edit</a>
+                    <a href="/pokemons/{{p.id}}/destroy">delete</a>
 
+                </td>
 
-
-
-
-
-
+                
+        </table>
+    </div>
 </body>
 
 </html>

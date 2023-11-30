@@ -1,6 +1,7 @@
 from flask_app import app
 from flask import request ,render_template, session, redirect, flash
 from flask_app.models.user import User
+from flask_app.models.pokemon import Pokemon
 from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt(app)     # we are creating an object called bcrypt, 
                          # which is made by invoking the function Bcrypt with our app as an argument
@@ -26,7 +27,7 @@ def dashboard():
     if not 'user_id' in session:
         return redirect('/')
     user = User.get_by_id({'id':session['user_id']})
-    pokemon=pokemon.get
+    pokemon=Pokemon.get
     return render_template("dashboard.html", user = user)
 
 @app.route('/users/login', methods=['POST'])

@@ -70,7 +70,7 @@ class Pokemon :
             flash("hp is not valid ")
             is_valid = False
 
-        elif data['image '] = "":
+        elif data['image '] == "":
             flash("you have to put  an image  ")
             is_valid = False
         return is_valid
