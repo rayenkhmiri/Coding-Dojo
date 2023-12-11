@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="display: flex; flex-direction: column ; justify-content: center; align-items: center; margin: 20px auto; width: 60%;">
+        <h1>
+            welcome to Great Number Game !!!
+        </h1>
+        <p>I am thinking of a number between 1 and 100 </p>
+        {% if 'guess' in session %}
+        {%if session['number']==session['guess']%}
+        <div style="background-color: green; width: 50%; height: 130px; display: flex;flex-direction: column;  align-items: center;">
+            <h3> {{session['number']}} was the number </h3>
+            
+            <button><a href="/reset">Play Again </a></button>
+        </div>
+        
+        {%elif session['number'] < session['guess'] %}
+        <div style="background-color:red ;width:80%; height: 150px;display: flex;justify-content: center;align-items: center;">
+            <h3>Too high!</h3>
+        </div>
+        {%else%}
+        <div style="background-color: rgb(102, 0, 255); width: 450px; height: 150px; display: flex;justify-content: center;align-items: center;">
+            <h3>Too low! </h3>
+            
+        </div>
+        {%endif%} 
+        {%endif%}
+       
+        <form action="/guess" method="POST" style="display: flex; padding: 10px;gap: 10px ;background-color:rgb(35, 34, 34); flex-direction: column;justify-content: center; align-items: center; width: 30%;border-radius: 10px;">
+            <h2 style="color:rgb(91, 91, 84)">take a guess!!!</h2>
+            <input type="number" name="num" style="border-radius: 5px;height: 25px; margin-top: -10px;">
+            <button type="submit" style="background-color:rgb(162, 22, 22) ; width: 80px;height: 30px; border-radius: 5px;">guess</button>
+        </form>
+       
+    </div>
+    
+</body>
+</html>
