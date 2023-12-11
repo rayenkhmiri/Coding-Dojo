@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja creation</title>
+</head>
+<body>
+    <h1> ninja is{{ninja.id}}</h1>
+    <form action="/ninja/{{ninja.id}}">
+        <table>
+            <tr>
+                <th>first_name</th>
+                <th>last_name</th>
+                <th>age</th>
+            </tr>
+            {%for row in ninja%}
+                <tr>
+                    <td>{{row.first_name}}</td>
+                    <td>{{row.last_name}}</td>
+                    <td>{{row.age}}</td>
+                </tr>
+            {%endfor%}
+        </table>
+    </form>
+</body>
+</html>

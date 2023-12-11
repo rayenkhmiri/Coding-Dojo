@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
+    <title>Sasquatch Websighting</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center m-5">
+            <h1>Sasquatch Websighting</h1>
+           
+            <div class="roberto">
+                <h1>Roger Patterson </h1>
+                <a class="btn btn-primary" href="/dashboard"  style="height: 40px;"><i class="bi bi-arrow-left-circle" ></i>dashboard</a>
+                <form action="/logout" method="post"><input class="btn btn-danger" type="submit" value="Logout"></form>
+            </div>
+        </div>
+        <div >
+            <div>
+                <h3 style="text-decoration: underline;">{{squatche.name}}</h3>
+                
+                <div >
+                    <h4>What Happened :{{squatche.description}}</h4>
+                    {%if squatche.number==1%}
+                     <h4> # of sasquatches:{{squatche.number}}</h4>
+                    
+                    {%endif%}
+                 
+                    <h4>Date Made : {{squatche.date_made}}</h4>
+
+                    <h4>Reporterd By :{{squatche.poster.first_name}} {{squatche.poster.last_name}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

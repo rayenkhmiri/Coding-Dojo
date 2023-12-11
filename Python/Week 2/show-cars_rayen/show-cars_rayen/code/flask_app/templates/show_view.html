@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj' crossorigin='anonymous'></script>
+    <title>View Show</title>
+    <style>
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Welcome {{user.first_name}} {{user.last_name}}</h1>
+    <div class="container-fluid d-flex flex-column align-items-center mx-auto mt-2">
+        <div class="d-flex justify-content-around ">
+            <h1 class="p-2"> <img width="250" height="200" src=https://cdn.dribbble.com/userupload/3261442/file/original-79302dac2eb04d0f9aecac39e67b596b.png?resize=400x300></h1>
+            <div class="d-flex align-items-center">
+                <a href="/dashboard" class="btn btn-secondary mr-2">Dashboard</a>
+                <a href="/user/logout" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+
+        <div class="card w-50 mb-3">
+            <div class="card-header d-flex justify-content-between bg-dark text-white"  ">
+                <h2 class='fs-1'>{{show.name}}</h2>
+                <p class="fs-3 text-muted">Posted by: {{show.creator.first_name}} {{show.creator.last_name}}</p>
+            </div>
+            <div class="card-body bg-secondary text-white">
+                <div class="row mb-4">
+                    <p class="col-3 font-weight-bold">Network:</p>
+                    <p class="col-6">{{show.network}}</p>
+                </div>
+                <div class="row mb-4">
+                    <p class="col-3 font-weight-bold">Description:</p>
+                    <p class="col-6">{{show.description}}</p>
+                </div>
+                <div class="row mb-4">
+                    <p class="col-3 font-weight-bold">Release Date:</p>
+                    <p class="col-6">{{show.release_date.strftime('%B %dth, %Y')}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
