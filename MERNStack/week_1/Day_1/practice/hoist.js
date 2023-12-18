@@ -20,7 +20,7 @@ function print(){
 }
 console.log(berdan);
 //1: super cool
-//2: only okay  
+
 
 //----------4---------------
 
@@ -99,5 +99,3 @@ function makeDojo(name, students){
     return dojo;
 }
 //ERROR 
-
-
