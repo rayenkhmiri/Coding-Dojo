@@ -1,4 +1,4 @@
-touch sertles etapes flask ::
+les etapes flask ::
 
 
 1/ pipenv install flask pymysql flask-bcrypt
@@ -7,7 +7,7 @@ touch sertles etapes flask ::
 
 3/$ mkdir flask_app 
 
-4/$ cd flak_app/
+4/$ cd flask_app/
 
 5/$ mkdir config controllers models templates static
 
