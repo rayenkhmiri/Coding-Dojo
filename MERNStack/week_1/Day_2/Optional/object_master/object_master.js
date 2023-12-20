@@ -37,7 +37,7 @@ const pokémon = Object.freeze([
     const OnlyName= pokémon.filter(p => p.name );
     console.log(OnlyName)
 
-    
+
 
 
 
