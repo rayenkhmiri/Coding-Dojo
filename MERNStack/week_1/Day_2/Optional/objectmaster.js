@@ -23,23 +23,45 @@ const pokémon = Object.freeze([
         { "id": 146, "name": "Moltres",    "types": ["fire", "flying"] },
         { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
     ]);
+    
+    const bListPkmn = pokémon.filter( p => p.name[0] === "B" );
+    console.log(bListPkmn);
 
-    const idDivibleby3 = pokémon.filter( p=> p.id%3===0);
-    console.log(idDivibleby3);
+    const pkmnIds = pokémon.map( p => p.id );
+    console.log(pkmnIds);
 
-    const fireType=pokémon.filter( p => p.types.includes('fire'));
+    const divisibleBy3 = pokémon.filter( p =>p.id%3 ===0);
+    console.log(divisibleBy3);
+
+    const fireType=pokémon.filter( p => p.types.includes('fire')&&p.types.length===1);
     console.log(fireType);
 
+    const multitypes = pokémon.filter(p =>p.types.length>1);
+    console.log(multitypes);
+
+    const names = pokémon.map( p => p.name);
+    console.log(names);
+
+    const namesOver99 = pokémon.filter( p=> p.id>99).map(p => p.name);
+    console.log(namesOver99);
+
+    const poisonss = pokémon.filter(p=>p.types.length===1 && p.types[0]==="poison").map(p => p.name);
+    console.log(poisonss);
+
+    const secondType = pokémon.filter( p=> p.types[1]==="flying").map(p =>p.types[0]);
+    console.log(secondType);
     
-    const moreThanTwoType = pokémon.filter( p => p.types.length>1);
-    console.log(moreThanTwoType);
-
-    const OnlyName= pokémon.filter(p => p.name );
-    console.log(OnlyName)
-
-
+    const hmed = pokémon.filter( p => p.types.includes('normal')).length;
+    console.log(hmed)
 
 
 
 
     
+
+
+
+
+    
+
+
