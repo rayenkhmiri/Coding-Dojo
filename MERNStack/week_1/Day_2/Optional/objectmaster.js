@@ -50,18 +50,15 @@ const pokémon = Object.freeze([
 
     const secondType = pokémon.filter( p=> p.types[1]==="flying").map(p =>p.types[0]);
     console.log(secondType);
-    
+
     const hmed = pokémon.filter( p => p.types.includes('normal')).length;
     console.log(hmed)
 
 
 
 
-    
 
 
 
-
-    
 
 
