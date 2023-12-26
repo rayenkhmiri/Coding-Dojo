@@ -1,5 +1,5 @@
 import React from 'react'
-// import './App.css'
+
 
 const PlansComponents = ({plans, updatePlan, deletePlan}) => {
     return (

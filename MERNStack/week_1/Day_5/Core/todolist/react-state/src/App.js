@@ -51,7 +51,7 @@ function App() {
   }
   return (
     <div className='container'>
-      <h1>Add Your Plans for Today</h1>
+      <h1>Add Your Plans for your Car</h1>
       <FromComponent addPlan={addPlan} />
       <PlansComponents plans={plans} updatePlan={updatePlan} deletePlan={deletePlan} />
     </div>
