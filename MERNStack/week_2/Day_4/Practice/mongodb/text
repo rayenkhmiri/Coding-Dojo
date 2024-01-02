@@ -1,0 +1,179 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+Installez la dernière version de PowerShell pour de nouvelles fonctionnalités et améliorations ! https://aka.ms/PSWindows
+
+PS C:\Users\Mega-PC\Desktop> mongosh "mongodb+srv://cluster0.fauqfk3.mongodb.net/" --apiVersion 1 --username rayenkhmiriEnter password: ********
+Current Mongosh Log ID: 6593e69f21163c8f2061886d
+Connecting to:          mongodb+srv://<credentials>@cluster0.fauqfk3.mongodb.net/?appName=mongosh+2.0.0
+Using MongoDB:          6.0.12 (API Version 1)
+Using Mongosh:          2.0.0
+mongosh 2.1.1 is available for download: https://www.mongodb.com/try/download/shell
+
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+Atlas atlas-10xhxz-shard-0 [primary] test> use my_db
+switched to db my_db
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.createCollection("students")
+{ ok: 1 }
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.insertOne({name:"rayen" , home_state:"M1" , lucky_number:"7" , birthday:{day:27,month :07,year:2003}})
+{
+  acknowledged: true,
+  insertedId: ObjectId("6593e83921163c8f2061886e")
+}
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.find()
+[
+  {
+    _id: ObjectId("6593e83921163c8f2061886e"),
+    name: 'rayen',
+    home_state: 'M1',
+    lucky_number: '7',
+    birthday: { day: 27, month: 7, year: 2003 }
+  }
+]
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.insertOne({name:"mohamed",home_state:"m3",lucky_number:"8",birthday:{day:15,month:05,year:2001}})
+TypeError: db.insertOne is not a function
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.insertOne({name:"mohamed",home_state:"m3",lucky_number:"8",birthday:{day:15,month:05,year:2001}})
+{
+  acknowledged: true,
+  insertedId: ObjectId("6593e91f21163c8f2061886f")
+}
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.find()
+[
+  {
+    _id: ObjectId("6593e83921163c8f2061886e"),
+    name: 'rayen',
+    home_state: 'M1',
+    lucky_number: '7',
+    birthday: { day: 27, month: 7, year: 2003 }
+  },
+  {
+    _id: ObjectId("6593e91f21163c8f2061886f"),
+    name: 'mohamed',
+    home_state: 'm3',
+    lucky_number: '8',
+    birthday: { day: 15, month: 5, year: 2001 }
+  }
+]
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.insertOne({name:"bethan",home_state:"m3",lucky_number:"8",birthday:{day:26,month:06,year:2004}})
+{
+  acknowledged: true,
+  insertedId: ObjectId("6593e95d21163c8f20618870")
+}
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.find()
+[
+  {
+    _id: ObjectId("6593e83921163c8f2061886e"),
+    name: 'rayen',
+    home_state: 'M1',
+    lucky_number: '7',
+    birthday: { day: 27, month: 7, year: 2003 }
+  },
+  {
+    _id: ObjectId("6593e91f21163c8f2061886f"),
+    name: 'mohamed',
+    home_state: 'm3',
+    lucky_number: '8',
+    birthday: { day: 15, month: 5, year: 2001 }
+  },
+  {
+    _id: ObjectId("6593e95d21163c8f20618870"),
+    name: 'bethan',
+    home_state: 'm3',
+    lucky_number: '8',
+    birthday: { day: 26, month: 6, year: 2004 }
+  }
+]
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.insertOne({name:"tasnime",home_state:"hm3",lucky_number:"8",birthday:{day:26,month:06,year:2004}})
+{
+  acknowledged: true,
+  insertedId: ObjectId("6593f8f721163c8f20618871")
+}
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.find()
+[
+  {
+    _id: ObjectId("6593e83921163c8f2061886e"),
+    name: 'rayen',
+    home_state: 'M1',
+    lucky_number: '7',
+    birthday: { day: 27, month: 7, year: 2003 }
+  },
+  {
+    _id: ObjectId("6593e91f21163c8f2061886f"),
+    name: 'mohamed',
+    home_state: 'm3',
+    lucky_number: '8',
+    birthday: { day: 15, month: 5, year: 2001 }
+  },
+  {
+    _id: ObjectId("6593e95d21163c8f20618870"),
+    name: 'bethan',
+    home_state: 'm3',
+    lucky_number: '8',
+    birthday: { day: 26, month: 6, year: 2004 }
+  },
+  {
+    _id: ObjectId("6593f8f721163c8f20618871"),
+    name: 'tasnime',
+    home_state: 'hm3',
+    lucky_number: '8',
+    birthday: { day: 26, month: 6, year: 2004 }
+  }
+]
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.studentes.updateMany(
+... {name : {$in:['bethan' , 'Tasnime']}})
+MongoInvalidArgumentError: Update document requires atomic operators
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.studentes.updateMany( { name: { $in: ['bethan', 'tasnime'] } })
+MongoInvalidArgumentError: Update document requires atomic operators
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.studentes.updateMany( { name: { $in: ['bethan', 'tasnime'] } })
+MongoInvalidArgumentError: Update document requires atomic operators
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.studentes.updateMany( { name: { $in: ['bethan', 'tasnime'] } }, {home_state:'lac 2'})
+MongoInvalidArgumentError: Update document requires atomic operators
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.studentes.updateMany( { name: { $in: ['bethan', 'tasnime'] } },{$set: {home_state:'lac 2'})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:93)
+
+> 1 | db.studentes.updateMany( { name: { $in: ['bethan', 'tasnime'] } },{$set: {home_state:'lac 2'})
+    |                                                                                              ^
+  2 |
+
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.studentes.updateMany( { name: { $in: ['bethan', 'tasnime'] } },{$set: {home_state:'lac 2'}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-10xhxz-shard-0 [primary] my_db> db.students.find()
+[
+  {
+    _id: ObjectId("6593e83921163c8f2061886e"),
+    name: 'rayen',
+    home_state: 'M1',
+    lucky_number: '7',
+    birthday: { day: 27, month: 7, year: 2003 }
+  },
+  {
+    _id: ObjectId("6593e91f21163c8f2061886f"),
+    name: 'mohamed',
+    home_state: 'm3',
+    lucky_number: '8',
+    birthday: { day: 15, month: 5, year: 2001 }
+  },
+  {
+    _id: ObjectId("6593e95d21163c8f20618870"),
+    name: 'bethan',
+    home_state: 'm3',
+    lucky_number: '8',
+    birthday: { day: 26, month: 6, year: 2004 }
+  },
+  {
+    _id: ObjectId("6593f8f721163c8f20618871"),
+    name: 'tasnime',
+    home_state: 'hm3',
+    lucky_number: '8',
+    birthday: { day: 26, month: 6, year: 2004 }
+  }
+]
+Atlas atlas-10xhxz-shard-0 [primary] my_db>

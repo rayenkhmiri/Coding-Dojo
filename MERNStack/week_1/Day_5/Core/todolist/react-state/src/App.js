@@ -1,38 +1,37 @@
 import { useState } from 'react'
-import './App.css'
+import './ass.css'
 import PlansComponents from './components/ToDo'
 import FromComponent from './components/List'
 
 
-function App() {
-  localStorage.setItem("plans",JSON.stringify({ content: " Build Your Car", status: false },
-  { content: "PUT you color", status: true }))
+function ass() {
+
   const savedPlans  = JSON.parse(localStorage.getItem("plans"))
   const [plans, setPlans] = useState([
     { content: "Build You Car", status: false },
     { content: "Put your color", status: true }])
 
-
-
-
   //  creation 
   const addPlan = (newPlan) => {
-    setPlans([...plans, newPlan])
+    if (newPlan!=""){
+      setPlans([...plans, newPlan])
+
+    }
   }
 
 
   // UPDATE
   const updatePlan = (index) => {
     console.log("Index of Plan to update", index);
+    
+      const plansUpdated = [...plans]
+      //2 * update the plan
+      plansUpdated[index].status = !plans[index].status
+      console.log(plansUpdated);
+      setPlans(plansUpdated); 
 
+    
     // 1 * create a copy of plans
-    const plansUpdated = [...plans]
-
-
-    //2 * update the plan
-    plansUpdated[index].status = !plans[index].status
-    console.log(plansUpdated);
-    setPlans(plansUpdated)
   }
 
 
@@ -58,4 +57,4 @@ function App() {
   )
 }
 
-export default App
+export default ass
