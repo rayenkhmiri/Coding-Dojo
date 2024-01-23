@@ -1,0 +1,6 @@
+
+3- dotnet new console -o FirstCSharp
+
+4-cd .\FirstCSharp\
+
+5- dotnet run 
