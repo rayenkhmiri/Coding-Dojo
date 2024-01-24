@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-num 1
+// num 1
 for(int i = 1 ; i<=255 ; i++)
 {
     System.Console.WriteLine(i);
@@ -14,7 +14,7 @@ for(int i = 0 ; i< 5;i++)
     System.Console.WriteLine(rand.Next(10,21));
 }
 // num 3
-Random rand = new Random();
+// Random rand = new Random();
     int sum = 0;
 
         for (int i = 0; i < 5; i++)
@@ -24,7 +24,6 @@ Random rand = new Random();
             sum += randomValue;
         } 
         System.Console.WriteLine(sum);
-
 // num 4
 for(int i = 1 ; i <=100 ; i++)
 {
