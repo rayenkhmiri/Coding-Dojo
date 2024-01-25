@@ -12,7 +12,6 @@ boolean[3] = false;
 boolean[4] = true;
 boolean[5] = false;
 
-
 List<string> iceCream = new List<string>();
 iceCream.Add("Flavor1");
 iceCream.Add("Flavor2");

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\Fundamental 2\\core\\core.csproj": {}
+    "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\fundam2\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\Fundamental 2\\core\\core.csproj": {
+    "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\fundam2\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\Fundamental 2\\core\\core.csproj",
-        "projectName": "core",
-        "projectPath": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\Fundamental 2\\core\\core.csproj",
+        "projectUniqueName": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\fundam2\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\fundam2\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Mega-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\Fundamental 2\\core\\obj\\",
+        "outputPath": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day1\\Core\\fundam2\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mega-PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
