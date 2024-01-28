@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-﻿List<Drink> AllBeverages = new List<Drink>
+List<Drink> AllBeverages = new List<Drink>
         {
             new Soda(" Cola", "Brown", 4.0, false, 150),
             new Coffee("Americano", "Black", 80.0, "Medium", "Arabica", 5),
