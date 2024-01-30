@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "xHKGIIGRalLWW8c3GBj+KgE8zDBqT6DdpD7NCV/yN+s=",
+  "Source": "Practice",
+  "BasePath": "_content/Practice",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Practice\\wwwroot",
+      "Source": "Practice",
+      "ContentRoot": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day3\\Practice\\countdown\\Practice\\wwwroot\\",
+      "BasePath": "_content/Practice",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day3\\Practice\\countdown\\Practice\\wwwroot\\css\\style.css",
+      "SourceId": "Practice",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week1\\Day3\\Practice\\countdown\\Practice\\wwwroot\\",
+      "BasePath": "_content/Practice",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}
