@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xHKGIIGRalLWW8c3GBj+KgE8zDBqT6DdpD7NCV/yN+s=",
+  "Hash": "Ys7XRVSG7UFtKzVGPMvRbNZq5Guc5zFUDF6+1pvLa1U=",
   "Source": "Practice",
   "BasePath": "_content/Practice",
   "Mode": "Default",
@@ -26,6 +26,8 @@
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
