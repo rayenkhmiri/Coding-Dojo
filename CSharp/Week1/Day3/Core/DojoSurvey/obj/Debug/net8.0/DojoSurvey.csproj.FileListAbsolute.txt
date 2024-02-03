@@ -26,3 +26,4 @@ C:\Users\Mega-PC\Desktop\Coding Dojo\CSharp\Week1\Day3\Core\DojoSurvey\obj\Debug
 C:\Users\Mega-PC\Desktop\Coding Dojo\CSharp\Week1\Day3\Core\DojoSurvey\obj\Debug\net8.0\DojoSurvey.pdb
 C:\Users\Mega-PC\Desktop\Coding Dojo\CSharp\Week1\Day3\Core\DojoSurvey\obj\Debug\net8.0\DojoSurvey.genruntimeconfig.cache
 C:\Users\Mega-PC\Desktop\Coding Dojo\CSharp\Week1\Day3\Core\DojoSurvey\obj\Debug\net8.0\ref\DojoSurvey.dll
+C:\Users\Mega-PC\Desktop\Coding Dojo\CSharp\Week1\Day3\Core\DojoSurvey\bin\Debug\net8.0\DojoSurvey.staticwebassets.runtime.json
