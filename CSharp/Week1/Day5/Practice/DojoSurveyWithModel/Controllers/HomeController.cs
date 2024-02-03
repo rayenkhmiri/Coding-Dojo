@@ -1,43 +1,28 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DojoSurveyWithModel.Models;
+using DojoSurveyWithModel.Model;
 
-namespace DojoSurveyModel.Controllers;
+namespace DojoSurveyWithModel.Controllers;
 
 public class HomeController : Controller
 {
-
-    static User? user;
-
     private readonly ILogger<HomeController> _logger;
+    public static List<User> Surveys { get; set; } = new();
 
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
     }
 
-    [HttpGet("")]
     public IActionResult Index()
     {
         return View();
     }
-
-    [HttpPost("process")]
-    public IActionResult Process(User newUser)
+    [HttpPost]
+    public IActionResult CreateDojo(User newUser)
     {
-        user = newUser;
-        return RedirectToAction("Result");
-    }
-
-    [HttpGet("result")]
-    public IActionResult Results()
-    {
-        return View(user);
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
+        return View("Result", newUser);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -47,6 +32,3 @@ public class HomeController : Controller
     }
 }
 
-public class User
-{
-}
