@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LINQEruption")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b38b938fd6feaf2190563dd5e4c25ef04e7fef0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+491e068d16e93815cd5f10f6b3d1c0cc163121de")]
 [assembly: System.Reflection.AssemblyProductAttribute("LINQEruption")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LINQEruption")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
