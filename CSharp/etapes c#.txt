@@ -1,6 +1,10 @@
+1-  dotnet new mvc --no-https -o  name of project 
 
-3- dotnet new console -o FirstCSharp
 
-4-cd .\FirstCSharp\
+2-dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
 
-5- dotnet run 
+3-dotnet ef migrations add InitialMigrationDbCreation 
+
+
+4-dotnet ef database update 
