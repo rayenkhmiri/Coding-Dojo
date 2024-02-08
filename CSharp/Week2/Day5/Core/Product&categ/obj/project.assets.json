@@ -786,11 +786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week2\\Day5\\Core\\Products\\Products.csproj",
+      "projectUniqueName": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week2\\Day5\\Core\\Product&categ\\Products.csproj",
       "projectName": "Products",
-      "projectPath": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week2\\Day5\\Core\\Products\\Products.csproj",
+      "projectPath": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week2\\Day5\\Core\\Product&categ\\Products.csproj",
       "packagesPath": "C:\\Users\\Mega-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week2\\Day5\\Core\\Products\\obj\\",
+      "outputPath": "C:\\Users\\Mega-PC\\Desktop\\Coding Dojo\\CSharp\\Week2\\Day5\\Core\\Product&categ\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mega-PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
